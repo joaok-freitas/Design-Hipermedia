@@ -2,28 +2,62 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno de Estilos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
+        <p class="section-title">BUTTONS</p>
     <nav>
-        Default
-        Hover
+        <span class="nav">Default</span>
+        <span class="nav">Hover</span>
     </nav>
-    <button>Primary button</button> <button>Primary button</button><br>
-    <button>Secondary button</button> <button>Secondary button</button>
+    <button class="primary">Primary button</button> <button class="primary">Primary button</button><br>
+    <button class="secondary">Secondary button</button> <button class="secondary">Secondary button</button>
     </div>
     <div>
-        <p>Full Name</p>
-        <input type="text" placeholder="Ex: Lida Owen">
-        <p>Your Name</p>
-        <input type="text" placeholder="Anthony Webb">
-        <p>Password</p>
-        <input type="text" placeholder="5+ characters">
-        <p>Email Address</p>
-        <input type="text" placeholder="myemail@address.com">
+        <p class="section-title">INPUTS</p>
+        <h3>Full Name</h3>
+        <input type="text" placeholder="Ex: Lida Owen"> <span class="board-summary">Default</span>
+        <h3>Your Name</h3>
+        <input type="text" placeholder="Anthony Webb"> <span class="board-summary">Filled</span>
+        <h3>Password</h3>
+        <input type="text" placeholder="5+ characters"> <span class="board-summary">Focused with error message</span>
+        <p class="alert-message">Your password must be at least <strong>6 characters</strong> long.</p>
+        <h3>Email Address</h3>
+        <input type="text" placeholder="myemail@address.com"> <span class="board-summary">Inactive</span>
+    </div>
+    <div class="cards">
+        <p class="section-title">CARDS</p>
+        <span class="nav">Default Card Background</span>
+        <span class="nav">Hover Card Background</span>
+        <br>
+        <span class="card"></span>
+        <span class="card"></span>
+    </div>
+    <div class="colors">
+        <p class="section-title">COLORS</p>
+        <span style="background-color: #242E4C; color: white;">#242E4C</span>
+        <span style="background-color: #738BFD; color: white;">#738BFD</span>
+        <span style="background-color: #F55623; color: white;">#F55623</span>
+        <span style="background-color: #767E96; color: white;">#767E96</span>
+        <span style="background-color: #E9EAED; color: #1A2950;">#E9EAED</span>
+        <span style="background-color: #F3F4F6; color: #1A2950;">#F3F4F6</span>
+    </div>
+    <div>
+        <p class="section-title">FONTS - Montserrat</p>
+        <h1>Page Title | 28px Bold #1E1A50</h1>
+        <h2>Secondary Title | 14px Bold #1A2950</h2>
+        <a>Link | Montserrat 14px Medium #738BFD</a>
+        <p class="input-placeholder">Input Placeholder | 14px Medium #767E96</p>
+        <p>Basic Paragraph | 12px Medium #1A2950</p>
+        <p class="board-summary">Board Summary Label | 12px Medium #767E96</p>
+        <p class="alert-message">Alert Message | 12px Medium #F55623</p>
+    </div>
+    <div>
+        <p class="section-title">ICONS</p>
+        <img src="icons.png" alt="" style="margin-top: 40px;">
     </div>
 </body>
 </html>
