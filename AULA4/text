@@ -1,0 +1,4 @@
+display: flex;
+align-items: center; //eixo do y
+justify-content: center; //eixo do x
+gap: 2px;

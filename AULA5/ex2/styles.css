@@ -1,0 +1,61 @@
+body{
+    background-color: lightgray;
+}
+.container{
+    display:flex;
+    border-radius: 15px;
+    height: 500px;
+    width: 600px;
+    background-color: white;
+}
+
+.logincard{
+    margin: 10px;
+    display: flex;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login-form h3{
+    align-self: flex-start;
+}
+
+a.password{
+    color: rgb(87, 131, 219);
+}
+
+.imagem{
+    width: 40%;
+}
+
+.imagem img{
+    width: fit-content;
+    height: 500px;
+}
+
+input {
+    width: 70%;
+    height: 30px;
+    color: lightgray;
+    margin-top: 20px;
+}
+
+button.next {
+    background-color: rgb(87, 131, 219);
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.botoes{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+}
