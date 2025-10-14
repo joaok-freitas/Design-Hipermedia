@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 900px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+    height: 100%;
+    width: 90%;
+}
+
+/*.text {
+    background-color: aqua;
+}*/
+
+.text h1{
+    color: #0D93E7;
+}
+
+.itemsettings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.imagem {
+    display: flex;
+    width: 340px;
+    justify-content: center;
+}
+
+.lowercard {
+    display: flex;
+    height: fit-content;
+}
+
+.colors button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+button.yellowbutton {
+    background-color: yellow;
+}
+button.redbutton {
+    background-color: red;
+}
+button.blackbutton {
+    background-color: black;
+}
+
+.colors {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.optiontitle {
+    display: flex;
+    width: 100%;
+}
+
+.sizebutton{
+    width: 100%;
+}
+
+button.sizebutton{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: white;
+    font-size: 35px;
+}
+
+.addbutton {
+    display: flex;
+    background-color: white;
+    width: 340px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+button.addbutton {
+    background-color: black;
+    color: white;
+    border-color: greenyellow;
+    border-width: 1px;
+    height: 70px;
+    width: 250px;
+    font-size: 30px;
+}
+
+img.item {
+    width: 340px;
+}
