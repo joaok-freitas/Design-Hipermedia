@@ -3,6 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -20,19 +21,20 @@ body {
     width: 90%;
 }
 
-/*.text {
-    background-color: aqua;
-}*/
+.text {
+    height: 25%;
+}
 
 .text h1{
     color: #0D93E7;
+    font-weight: 900;
 }
 
 .itemsettings {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 40%;
 }
 
@@ -51,8 +53,9 @@ body {
 }
 
 .lowercard {
+    margin: 0px;
     display: flex;
-    height: fit-content;
+    height: 70%;
 }
 
 .colors button {
@@ -116,4 +119,11 @@ button.addbutton {
 
 img.item {
     width: 340px;
+}
+
+.pricetext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
