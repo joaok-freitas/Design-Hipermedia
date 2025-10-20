@@ -1,0 +1,63 @@
+.container1{
+    display: grid;
+    grid-template-areas: "a1 a2"
+                        "a3 a4";
+}
+.header{
+    position: relative;
+}
+.header img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button.getstarted {
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="email"] {
+    width: 250px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.header nav{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.header nav a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.section-text{
+    align-content: center;
+    grid-area: a1;
+    background-color: lightblue;
+}
+.section-image{
+    grid-area: a2;
+    background-color: lightgreen;
+}
+
+.section-text2{
+    align-content: center;
+    grid-area: a3;
+    background-color: violet;
+}
+
+.section-image2{
+    grid-area: a4;
+    background-color: red;
+}
