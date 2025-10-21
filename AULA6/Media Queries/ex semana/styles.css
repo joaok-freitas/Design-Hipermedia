@@ -1,0 +1,71 @@
+.card {
+    container-type: inline-size;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2, .card p {
+    margin: 0;
+}
+
+.person-info {
+    margin-left: 15px;
+}
+
+.section-top {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+@container (width < 600px) {
+    .section-top {
+        background-color: red;
+    }
+}
+
+.section-top button {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.section-top img {
+    border-radius: 50%;
+}
+
+.section-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.section-bottom button {
+    margin-inline: 10px;
+}
+
+button.black-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.white-button {
+    background-color: #fff;
+    color: grey;
+    border: solid grey 1px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
