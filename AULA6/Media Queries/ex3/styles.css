@@ -1,1 +1,85 @@
-container-type: inline 
+/* container-type: inline  */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background-color: #ECF2FD;
+    padding: 30px;
+    display: grid;
+    grid-template-areas: "a1 a1 a2 a3"
+                         "a4 a5 a5 a3";
+    gap: 30px;
+}
+
+@media (width < 768px) {
+.container {
+    grid-template-areas: "a1"
+                         "a2"
+                         "a4"
+                         "a5"
+                         "a3";
+    }
+}
+
+.card {
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: justify;
+}
+
+.card1 {
+    grid-area: a1;
+    background-color: #743EC8;
+    background-image: url(bg-pattern-quotation.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-size: 17%;
+}
+
+.card2 {
+    grid-area: a2;
+    background-color: #475669;
+}
+
+.card3 {
+    grid-area: a3;
+    background-color: white;
+}
+
+.card4 {
+    grid-area: a4;
+    background-color: white;
+}
+
+.card5 {
+    grid-area: a5;
+    background-color: #181F2F;
+    color: #727B86;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.personcard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.personcard-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.personcard-text h6 {
+    margin: 0;
+}
