@@ -2,6 +2,13 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: #ECF2FD;
 }
 
 .container {
