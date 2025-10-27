@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="separation">
+        <h1>1. Darkmode</h1>
+        <input type="checkbox" id="darkmode-toggle"> Toggle theme
+    </div>
+    <div class="separation">
+        <h1>2. Accordion</h1>
+        <details name="requirements" open>
+            <summary>Section 1</summary>
+            <p>This is the content for section 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse possimus fugiat odio dicta numquam eaque non fuga dolore natus dolores, recusandae minus rem ex, quidem adipisci perferendis aut quia ipsum?</p>
+        </details>
+
+        <details name="requirements">
+            <summary>Section 2</summary>
+            <p>This is the content for section 2.</p>
+        </details>
+
+        <details name="requirements">
+            <summary>Section 3</summary>
+            <p>This is the content for section 3.</p>
+        </details>
+    </div>
+    <div class="separation">
+        <h1>5. Breadcrumb Navigation</h1>
+        <nav class="breadcrumb">
+            <a href="#">Home</a>
+            <a href="#">Pagina 1</a>
+            <a href="#">Pagina 2</a>
+            <span>Pagina atual</span>
+        </nav>
+    </div>
+    <div class="separation">
+        <h1>3. Alert</h1>
+        <p>Criar label para texto com um input checkbox para dar toggle</p>
+        <label for="alert-toggle" style="cursor:pointer; background:#007bff; color:white; padding:10px; border-radius:5px;">
+            Show Alert
+        </label>
+
+        <input type="checkbox" id="alert-toggle">
+        <div class="alert">
+            <label for="alert-toggle" class="close-btn">&times;</label>
+            ⚠️ This is a CSS-only alert box!
+        </div>
+    </div>
+</body>
+</html>
