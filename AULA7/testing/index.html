@@ -11,9 +11,9 @@
         <h1>1. Darkmode</h1>
         <input type="checkbox" id="darkmode-toggle"> Toggle theme
     </div>
-    <div class="separation">
+    <div class="separation accordion">
         <h1>2. Accordion</h1>
-        <details name="requirements" open>
+        <details class="top" name="requirements" open>
             <summary>Section 1</summary>
             <p>This is the content for section 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse possimus fugiat odio dicta numquam eaque non fuga dolore natus dolores, recusandae minus rem ex, quidem adipisci perferendis aut quia ipsum?</p>
         </details>
@@ -23,7 +23,7 @@
             <p>This is the content for section 2.</p>
         </details>
 
-        <details name="requirements">
+        <details class="bottom" name="requirements">
             <summary>Section 3</summary>
             <p>This is the content for section 3.</p>
         </details>
@@ -48,6 +48,58 @@
         <div class="alert">
             <label for="alert-toggle" class="close-btn">&times;</label>
             ⚠️ This is a CSS-only alert box!
+        </div>
+    </div>
+    <div class="separation">
+        <h1>4. Badge</h1>
+        <button type="button" class="btn anchor-button">Inbox
+            <span class="anchor-badge">
+            99+ <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    </div>
+    <div class="separation">
+        <h1>8. Modal (dialog & modal)</h1>
+            <button class="btn" popovertarget="my-popover">Toggle Popover</button>
+        </div>
+        <div popover id="my-popover" class="box">
+            <div class="title">
+                <h2>This is a popover.</h2> <button class="exit-btn" popovertarget="my-popover" popovertargetaction="hide">X</button>
+            </div>
+            <p>Some content for the popover.</p>
+            <div class="buttons">
+                <button class="btn btn-secondary" popovertarget="my-popover" popovertargetaction="hide">Fechar</button>
+                <button class="btn" popovertarget="my-popover" popovertargetaction="hide">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+    <div class="separation">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled">Disabled</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="separation">
+        <div class="grid">
+            <details name="tabs" open>
+                <summary data-tab-order="1">Tab1</summary>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestias repell
+            </details>
+            <details name="tabs">
+                <summary data-tab-order="2">Tab2</summary>
+                <div>Voluptatibus quam consectetur fuga dolorem praesentium atque facere nam distinctio
+            </details>
+            <details name="tabs">
+                <summary data-tab-order="3">Tab3</summary>
+                <div>Sapiente ea nulla, reiciendis non harum sed delectus error laudantium impedit
+            </details>
         </div>
     </div>
 </body>
